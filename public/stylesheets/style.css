@@ -1,0 +1,55 @@
+body {
+  background: #f3f3f2;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.81); }
+
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.81) !important; }
+
+.err {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 30px; }
+
+.grid {
+  position: relative;
+  width: 100%; }
+  .grid h1 {
+    text-align: center; }
+  .grid .image-block {
+    box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.42);
+    border-radius: 2px;
+    background-color: #ffffff;
+    display: inline-block;
+    text-align: center;
+    margin: 0 0 30px 30px;
+    -webkit-transition: box-shadow 0.3s;
+    -o-transition: box-shadow 0.3s;
+    transition: box-shadow 0.3s; }
+    .grid .image-block:hover {
+      box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.42); }
+    .grid .image-block .title {
+      height: 40px; }
+      .grid .image-block .title span {
+        line-height: 40px; }
+  .grid .nav {
+    text-align: center;
+    padding: 20px 0 20px 0; }
+    .grid .nav .pagination {
+      display: inline-block;
+      background-color: white;
+      margin: 0;
+      padding: 0;
+      height: 40px; }
+      .grid .nav .pagination li {
+        display: inline-block;
+        height: 100%;
+        border: 1px solid #ddd; }
+        .grid .nav .pagination li.active {
+          background-color: rgba(0, 0, 0, 0.08); }
+        .grid .nav .pagination li a {
+          padding: 10px 14px 10px 14px;
+          display: inline-block; }

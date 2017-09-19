@@ -1,0 +1,74 @@
+$bg-color: rgb(243, 243, 242);
+$bg-image-block-color: #fff;
+
+body {
+  background: $bg-color;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.81);
+}
+
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.81) !important;
+}
+
+.err {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 30px;
+}
+
+.grid {
+  position: relative;
+  width: 100%;
+  h1 {
+    text-align: center;
+  }
+
+  .image-block {
+    box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.42);
+    border-radius: 2px;
+    background-color: #ffffff;
+    display: inline-block;
+    text-align: center;
+    margin: 0 0 30px 30px;
+    -webkit-transition: box-shadow 0.3s;
+    -o-transition: box-shadow 0.3s;
+    transition: box-shadow 0.3s;
+    &:hover {
+      box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.42);
+    }
+      .title {
+        height: 40px;
+          span {
+            line-height: 40px;
+          }
+      }
+  }
+  .nav {
+    text-align: center;
+    padding: 20px 0 20px 0;
+    .pagination {
+      display: inline-block;
+      background-color: white;
+      margin: 0;
+      padding: 0;
+      height: 40px;
+      li {
+        display: inline-block;
+        height: 100%;
+        border: 1px solid #ddd;
+        &.active {
+          background-color: rgba(0, 0, 0, 0.08);
+        }
+        a {
+          padding: 10px 14px 10px 14px;
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+}
