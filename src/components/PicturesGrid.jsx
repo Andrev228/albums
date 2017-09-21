@@ -31,7 +31,7 @@ const PicturesGrid = (params) => {
             </div>
         )
     } else {
-        return (<Route path={ params.url } component={ NotFound } />)
+        return (<Route path={ location.href.substr(1,) } component={ NotFound } />)
     }
 };
 

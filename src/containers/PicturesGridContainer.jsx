@@ -21,7 +21,7 @@ const mapStateToProps = (state, ownProps) => {
             }
         }
 
-        return { url: ownProps.location.pathname }
+        return { }
 
 };
 

@@ -21,12 +21,12 @@ const mapStateToProps = (state, ownProps) => {
                     currentPage: page
                 }
             } else {
-                return { url: ownProps.location.pathname };
+                return { };
             }
         }
     }
 
-    return { url: ownProps.location.pathname };
+    return { };
 
 };
 
