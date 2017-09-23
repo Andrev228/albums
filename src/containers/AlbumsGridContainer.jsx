@@ -4,7 +4,7 @@ import AlbumsGrid  from '../components/AlbumsGrid.jsx';
 const getAlbumsList = (state) => {
     let albumsList = [];
     for (let key in state) {
-        albumsList.push(Object.assign({
+        albumsList.push(Object.assign({}, {
             id: state[key].id,
             title: key,
             cover: state[key].cover,
