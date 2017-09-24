@@ -1,5 +1,5 @@
 $bg-color: rgb(243, 243, 242);
-$bg-image-block-color: #fff;
+$animation-time: .3s;
 
 body {
   background: $bg-color;
@@ -34,9 +34,9 @@ a {
     display: inline-block;
     text-align: center;
     margin: 0 0 30px 30px;
-    -webkit-transition: box-shadow 0.3s;
-    -o-transition: box-shadow 0.3s;
-    transition: box-shadow 0.3s;
+    -webkit-transition: box-shadow $animation-time;
+    -o-transition: box-shadow $animation-time;
+    transition: box-shadow $animation-time;
     &:hover {
       box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.42);
     }

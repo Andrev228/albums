@@ -3,8 +3,8 @@ import PicturesGrid from '../components/PicturesGrid.jsx';
 
 const mapStateToProps = (state, ownProps) => {
 
-    let albumId = ownProps.match.params.id,
-        page = ownProps.match.params.page,
+    let albumId = ownProps.albumId,
+        page = ownProps.page,
         newState = JSON.parse(JSON.stringify(state));
 
     for (let key in newState) {
