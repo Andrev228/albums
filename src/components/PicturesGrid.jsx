@@ -1,7 +1,6 @@
 import React      from 'react';
 import ImageBlock from './ImageBlock.jsx';
 import Pagination from './Pagination.jsx';
-import { Route }  from 'react-router-dom';
 import NotFound   from './NotFound.jsx';
 
 const PicturesGrid = (params) => {
@@ -31,7 +30,7 @@ const PicturesGrid = (params) => {
             </div>
         )
     } else {
-        return (<Route path={ location.href.substr(1,) } component={ NotFound } />)
+        return (<NotFound />)
     }
 };
 
