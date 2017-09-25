@@ -1,7 +1,7 @@
 import React           from 'react';
 import ImageBlockTitle from './ImageBlockTitle.jsx';
 
-const ImageBlock = ({ title, cover, editable }) => (
+const ImageBlock = ({ title, cover }) => (
         <div>
             <img src={cover} width='305' height='400'/>
                 <ImageBlockTitle title={ title }/>
