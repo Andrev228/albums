@@ -36,4 +36,3 @@ const PicturesGrid = ({ store }) => {
 
 export default PicturesGrid;
 
-

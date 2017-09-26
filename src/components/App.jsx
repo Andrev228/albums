@@ -9,7 +9,7 @@ import NotFound                      from './NotFound.jsx';
 import { ALBUMS_LIST,
     ALBUM_IMAGES_LIST,
     ALBUM_IMAGES_LIST_WITH_PAGE,
-    NOT_FOUND }                      from '../config/routes.jsx';
+    NOT_FOUND }                      from '../constants/routes.jsx';
 
 const App = () => (<Router>
                         <Switch>

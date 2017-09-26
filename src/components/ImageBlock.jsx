@@ -1,7 +1,7 @@
 import React                from 'react';
 import ImageBlockTitle      from './ImageBlockTitle.jsx';
 import { IMAGE_BLOCK_WIDTH,
-        IMAGE_BLOCK_HEIGHT} from '../config/constants.jsx';
+        IMAGE_BLOCK_HEIGHT} from '../constants/config.jsx';
 
 const ImageBlock = ({ title, cover }) => (
         <div>

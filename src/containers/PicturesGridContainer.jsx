@@ -1,6 +1,6 @@
 import { connect }                  from 'react-redux';
 import PicturesGrid                 from '../components/PicturesGrid.jsx';
-import { NUMBER_OF_IMAGES_ON_PAGE } from '../config/constants.jsx';
+import { NUMBER_OF_IMAGES_ON_PAGE } from '../constants/config.jsx';
 
 const getPictures = (state, { albumId }) => {
 
@@ -33,5 +33,4 @@ const PicturesGridContainer = connect(mapStateToProps, null)
                                     (PicturesGrid);
 
 export default PicturesGridContainer;
-
 
