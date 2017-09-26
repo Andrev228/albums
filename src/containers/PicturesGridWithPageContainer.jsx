@@ -1,11 +1,10 @@
-import { connect }  from 'react-redux';
-import PicturesGrid from '../components/PicturesGrid.jsx';
+import { connect }                  from 'react-redux';
+import PicturesGrid                 from '../components/PicturesGrid.jsx';
 import { NUMBER_OF_IMAGES_ON_PAGE } from '../config/constants.jsx';
 
-const mapStateToProps = (state, ownProps) => {
+const getPictures = (state, { albumId, page }) => {
 
-    let { albumId, page } = ownProps,
-        newState = JSON.parse(JSON.stringify(state));
+    let newState = JSON.parse(JSON.stringify(state));
 
     for (let key in newState) {
         if (newState[key].id == albumId) {
@@ -25,11 +24,15 @@ const mapStateToProps = (state, ownProps) => {
     }
 
     return {};
-
 };
+
+const mapStateToProps = (state, ownProps) => ({
+    store: getPictures(state, ownProps)
+});
 
 const PicturesGridWithPageContainer = connect(mapStateToProps, null)
                                             (PicturesGrid);
 
 export default PicturesGridWithPageContainer;
+
 
