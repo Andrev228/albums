@@ -1,7 +1,5 @@
-const reducer = (state, action) => {
-    switch (action.type) {
-        default: return state;
-    }
+const reducer = (state) => {
+    return state;
 };
 
 export default reducer;

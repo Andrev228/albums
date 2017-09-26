@@ -2,7 +2,9 @@ import { connect } from 'react-redux';
 import AlbumsGrid  from '../components/AlbumsGrid.jsx';
 
 const getAlbumsList = (state) => {
+
     let albumsList = [];
+
     for (let key in state) {
         albumsList.push(Object.assign({}, {
             id: state[key].id,
@@ -11,6 +13,7 @@ const getAlbumsList = (state) => {
             editable: state[key].editable
         }))
     }
+
     return albumsList;
 };
 

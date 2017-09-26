@@ -1,5 +1,6 @@
-import { connect }  from 'react-redux';
-import PicturesGrid from '../components/PicturesGrid.jsx';
+import { connect }                  from 'react-redux';
+import PicturesGrid                 from '../components/PicturesGrid.jsx';
+import { NUMBER_OF_IMAGES_ON_PAGE } from '../config/constants.jsx';
 
 const mapStateToProps = (state, ownProps) => {
 
@@ -9,10 +10,10 @@ const mapStateToProps = (state, ownProps) => {
     for (let key in newState) {
             if (newState[key].id == albumId) {
 
-                let pages = Math.ceil(newState[key].images.length / 10);    //images вырезает по ссылке, по этому pages будет на 1 меньше
+                let pages = Math.ceil(newState[key].images.length / NUMBER_OF_IMAGES_ON_PAGE);    //images вырезает по ссылке, по этому pages будет на 1 меньше
 
                 return {
-                    images: newState[key].images.splice(0, 10),
+                    images: newState[key].images.splice(0, NUMBER_OF_IMAGES_ON_PAGE),
                     album: key,
                     albumId,
                     pages,
@@ -21,7 +22,7 @@ const mapStateToProps = (state, ownProps) => {
             }
         }
 
-        return { }
+        return {}
 
 };
 

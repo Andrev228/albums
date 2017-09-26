@@ -21,8 +21,7 @@ const PicturesGrid = (params) => {
                         return (
                             <div className='image-block' key={ params.images.indexOf(image) }>
                                 <ImageBlock title={ image.title }
-                                            cover={ image.image }
-                                            editable={ image.editable }/>
+                                            cover={ image.image } />
                             </div>);
                     })
                 }
@@ -30,7 +29,7 @@ const PicturesGrid = (params) => {
             </div>
         )
     } else {
-        return (<NotFound />)
+        return <NotFound />
     }
 };
 
